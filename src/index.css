@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.rounded-image {
+    width: 40%;
+    height: 300px; 
+    margin-top: 20px;
+    border-radius:50%; 
+     /*Ensures the image covers the container without distortion*/
+  }
+  #text{
+    top: 10%;
+    left: 35%;
+    color: white;
+    background-color:transparent;
+    border: 8px white double;
+    padding: 50px;
+
+}
+.span{
+    color: rgba(230, 28, 183, 0.889);
+    text-shadow: 3px 2px 1px rgb(238, 227, 231);
+}
+.cpy:hover{
+    text-underline-position: below 5px white;
+    cursor: pointer;
+}
+.hover-effect:hover {
+    transform: scale(1.2); /* Makes the image 20% larger on hover */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+  }
+  .light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    background-color: #121212; /* or any dark color */
+    color: white;
+  }
+  .navbar, .footer {
+    padding: 1rem;
+  }
+  
+  .button {
+    /* Example button styles */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-light {
+    background-color: lightgray;
+    color: black;
+  }
+  
+  .button-dark {
+    background-color: darkgray;
+    color: white;
+  }
+  .link:hover{
+    color: blue;
+    transform: scale(1.2);
+  }
+  :root {
+    --bg-color: white;
+    --text-color: black;
+  }
+  
+  body.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+  }
+  
+  /* Apply the CSS variables */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
